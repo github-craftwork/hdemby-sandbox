@@ -10,9 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo Hello $NAME!
-      env:
-        NAME: Karen  
+      run: echo "Hello $GITHUB_ACTOR"
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
